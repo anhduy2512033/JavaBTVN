@@ -11,15 +11,15 @@ public class Cart {
     String city;
 
     public Cart() {
-        productList = new ArrayList<>();
+        this.productList = new ArrayList<>();
     }
 
     public void addProduct(String product) {
-        productList.add(product);
+        this.productList.add(product);
     }
 
     public void removeProduct(String product) {
-        productList.remove(product);
+        this.productList.remove(product);
     }
 
     public String getCity() {
