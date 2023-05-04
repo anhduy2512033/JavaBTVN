@@ -21,15 +21,7 @@ public class Cart {
     public void removeProduct(String product) {
         productList.remove(product);
     }
-    public void Tinh() {
-        double ship;
-        if (city.equals("HN") || city.equals("HCM")) {
-            ship = 0.01;
-        } else {
-            ship = 0.02;
-        }
-        grandTotal += grandTotal * ship;
-    }
+
     public String getCity() {
         return city;
     }
@@ -44,14 +36,6 @@ public class Cart {
 
     public void setCustomer(String customer) {
         this.customer = customer;
-    }
-
-    public double getGrandTotal() {
-        return grandTotal;
-    }
-
-    public void setGrandTotal(double grandTotal) {
-        this.grandTotal = grandTotal;
     }
 
     public int getId() {
